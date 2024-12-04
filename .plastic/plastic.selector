@@ -1,0 +1,4 @@
+repository "GDC_HW@All_Be_Dzen@cloud"
+  path "/"
+    br "/main"
+    co "/main"
