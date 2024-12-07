@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMover : MonoBehaviour
 {
+    private const float speedBooster = 20f;
     [SerializeField] private float _speedX = 0.5f;
     private Rigidbody2D _rigidbody;
     void Start()
@@ -13,7 +14,7 @@ public class PlayerMover : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _rigidbody.velocity = new Vector2(_speedX, _rigidbody.velocity.y);
+        _rigidbody.velocity = new Vector2(_speedX * speedBooster * Time.fixedDeltaTime, _rigidbody.velocity.y);
         
     }
 }
