@@ -249,7 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9be6debc7cc074ab5d94d400c76f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedX: -1
+  _speedX: 1
+  _jumpForce: 500
 --- !u!70 &140431227
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -390,7 +391,7 @@ GameObject:
   - component: {fileID: 1054167918}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
